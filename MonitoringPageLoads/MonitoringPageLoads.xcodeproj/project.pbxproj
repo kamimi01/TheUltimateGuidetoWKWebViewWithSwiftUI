@@ -14,6 +14,7 @@
 		D455587B27B7A2930077F6BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D455587A27B7A2930077F6BC /* Preview Assets.xcassets */; };
 		D455588327B7A3660077F6BC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D455588227B7A3660077F6BC /* WebView.swift */; };
 		D455588527B7A40A0077F6BC /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D455588427B7A40A0077F6BC /* WebViewModel.swift */; };
+		D4F00C2B27B8D8CD00FB1618 /* WebBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F00C2A27B8D8CD00FB1618 /* WebBaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D455587A27B7A2930077F6BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D455588227B7A3660077F6BC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		D455588427B7A40A0077F6BC /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		D4F00C2A27B8D8CD00FB1618 /* WebBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				D455588227B7A3660077F6BC /* WebView.swift */,
 				D455588427B7A40A0077F6BC /* WebViewModel.swift */,
 				D4264F0527B88191009A8C8E /* WebToolBarView.swift */,
+				D4F00C2A27B8D8CD00FB1618 /* WebBaseView.swift */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				D455588327B7A3660077F6BC /* WebView.swift in Sources */,
 				D455587627B7A2910077F6BC /* ContentView.swift in Sources */,
+				D4F00C2B27B8D8CD00FB1618 /* WebBaseView.swift in Sources */,
 				D455587427B7A2910077F6BC /* MonitoringPageLoadsApp.swift in Sources */,
 				D4264F0627B88191009A8C8E /* WebToolBarView.swift in Sources */,
 				D455588527B7A40A0077F6BC /* WebViewModel.swift in Sources */,

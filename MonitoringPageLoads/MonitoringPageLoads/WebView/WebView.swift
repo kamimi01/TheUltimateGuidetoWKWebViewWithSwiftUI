@@ -54,7 +54,7 @@ struct WebView: UIViewRepresentable {
     }
 
     static func dismantleUIView(_ uiView: WKWebView, coordinator: Coordinator) {
-        coordinator.observations.forEach({ $0.invalidate() })
+//        coordinator.observations.compactMap { $0 }.forEach({ $0.invalidate() })  // invalidate()は不要と判断
         coordinator.observations.removeAll()
     }
 }
@@ -62,7 +62,7 @@ struct WebView: UIViewRepresentable {
 extension WebView {
     class Coordinator: NSObject, WKNavigationDelegate {
         var parent: WebView
-        var observations: [NSKeyValueObservation] = []
+        var observations: [NSKeyValueObservation?] = []  // nullableで保持する
 
         init(_ parent: WebView) {
             self.parent = parent

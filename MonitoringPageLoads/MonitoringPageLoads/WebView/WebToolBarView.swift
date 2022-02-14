@@ -11,6 +11,7 @@ struct WebToolBarView: View {
     @Binding var action: WebView.Action
     @Binding var canGoBack: Bool
     @Binding var canGoForward: Bool
+    @Binding var isShownWebView: Bool
 
     var body: some View {
         HStack(alignment: .center) {
@@ -60,7 +61,9 @@ private extension WebToolBarView {
     }
 
     var closeButton: some View {
-        Button(action: {}) {
+        Button(action: {
+            isShownWebView.toggle()
+        }) {
             Image(systemName: "xmark")
         }
         .foregroundColor(.black)
@@ -70,6 +73,6 @@ private extension WebToolBarView {
 
 struct WebToolBarView_Previews: PreviewProvider {
     static var previews: some View {
-        WebToolBarView(action: .constant(.none), canGoBack: .constant(false), canGoForward: .constant(false))
+        WebToolBarView(action: .constant(.none), canGoBack: .constant(false), canGoForward: .constant(false), isShownWebView: .constant(false))
     }
 }
