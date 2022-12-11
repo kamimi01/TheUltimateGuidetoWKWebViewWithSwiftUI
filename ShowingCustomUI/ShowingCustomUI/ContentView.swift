@@ -14,7 +14,36 @@ struct ContentView: View {
     var body: some View {
         WebView(url: url)  // WebViewを表示しようとするとメインスレッドのwarningが出る https://developer.apple.com/forums/thread/712074
 //        Text("テスト")  // Textだとwarning出ない
-            .environmentObject(dialogManager)
+            .alert("Hey, Listen!", isPresented: $dialogManager.showAlert) {
+                Button("OK") {
+                    dialogManager.alertCompletion()
+                }
+            } message: {
+                Text(dialogManager.alertMessage)
+            }
+            .alert("Hey, Listen2!", isPresented: $dialogManager.showConfirmAlert) {
+                Button("OK") {
+                    dialogManager.confirmCompletion(true)
+                }
+                Button("キャンセル") {
+                    dialogManager.confirmCompletion(false)
+                }
+            } message: {
+                Text(dialogManager.confirmMessage)
+            }
+            .alert("Hey, Listen3!", isPresented: $dialogManager.showPromptAlert) {
+                TextField(dialogManager.promptMessage, text: $dialogManager.promptDefaultText)
+                Button("OK") {
+                    dialogManager.promptDefaultText = ""
+                    dialogManager.promptCompletion(dialogManager.promptDefaultText)
+                }
+                Button("キャンセル") {
+                    dialogManager.promptDefaultText = ""
+                    dialogManager.promptCompletion(nil)
+                }
+            } message: {
+                Text(dialogManager.promptMessage)
+            }
     }
 }
 
