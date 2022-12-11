@@ -12,6 +12,9 @@
 		D4B417ED2945AD5C00CDCB7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B417EC2945AD5C00CDCB7E /* Assets.xcassets */; };
 		D4B417F02945AD5C00CDCB7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B417EF2945AD5C00CDCB7E /* Preview Assets.xcassets */; };
 		D4B417F72945B02600CDCB7E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B417F62945B02600CDCB7E /* WebView.swift */; };
+		D4B417F92945C51C00CDCB7E /* DialogWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B417F82945C51C00CDCB7E /* DialogWindow.swift */; };
+		D4B417FB2945CC1000CDCB7E /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B417FA2945CC1000CDCB7E /* DialogView.swift */; };
+		D4B417FD2945E39300CDCB7E /* DialogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B417FC2945E39300CDCB7E /* DialogManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		D4B417EC2945AD5C00CDCB7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4B417EF2945AD5C00CDCB7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D4B417F62945B02600CDCB7E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		D4B417F82945C51C00CDCB7E /* DialogWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogWindow.swift; sourceTree = "<group>"; };
+		D4B417FA2945CC1000CDCB7E /* DialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
+		D4B417FC2945E39300CDCB7E /* DialogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				D4B417F62945B02600CDCB7E /* WebView.swift */,
 				D4B417EC2945AD5C00CDCB7E /* Assets.xcassets */,
 				D4B417EE2945AD5C00CDCB7E /* Preview Content */,
+				D4B417F82945C51C00CDCB7E /* DialogWindow.swift */,
+				D4B417FA2945CC1000CDCB7E /* DialogView.swift */,
+				D4B417FC2945E39300CDCB7E /* DialogManager.swift */,
 			);
 			path = ShowingCustomUI;
 			sourceTree = "<group>";
@@ -141,8 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4B417F72945B02600CDCB7E /* WebView.swift in Sources */,
+				D4B417FD2945E39300CDCB7E /* DialogManager.swift in Sources */,
+				D4B417F92945C51C00CDCB7E /* DialogWindow.swift in Sources */,
 				D4B417EB2945AD5900CDCB7E /* ContentView.swift in Sources */,
 				D4B417E92945AD5900CDCB7E /* ShowingCustomUIApp.swift in Sources */,
+				D4B417FB2945CC1000CDCB7E /* DialogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

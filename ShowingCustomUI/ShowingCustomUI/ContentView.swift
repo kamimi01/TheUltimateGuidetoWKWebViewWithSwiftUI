@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     private let url = URL(string: "https://kamimi01.github.io/StaticAssetSample/javascript-behaviour.html")!
-    @State private var showAlert = false
-    @State private var alertMessage = ""
+    @EnvironmentObject var dialogManager: DialogManager
 
     var body: some View {
-        WebView(url: url, showAlert: $showAlert, alertMessage: $alertMessage)
+        WebView(url: url)  // WebViewを表示しようとするとメインスレッドのwarningが出る https://developer.apple.com/forums/thread/712074
+//        Text("テスト")  // Textだとwarning出ない
+            .environmentObject(dialogManager)
     }
 }
 
